@@ -13,6 +13,8 @@
         width: 30px;
         height: 30px;
         background: url(../images/birds.png);
+        // css过渡
+        transition: top .3s linear;
     }
 
     .start{
@@ -26,6 +28,8 @@
         text-align: center;
         font-weight: bolder;
         cursor: pointer;
+        // CSS3过渡
+        transition: all .3s linear;
 
         &.start-white{
             color:#fff;
@@ -41,6 +45,7 @@
     .score{
         position: absolute;
         left: 50%;
+        top: 50px;
         transform: translateX(-50%);
         font-size:20px;
         font-weight: bolder;
@@ -55,6 +60,8 @@
         right: 0;
         opacity: .7;
         background: #000;
+        // 隐藏遮罩层
+        display: none;
     }
 
     .end{
@@ -63,6 +70,8 @@
         top: 70px;
         transform: translateX(-50%);
         text-align: center;
+        // 隐藏结束层
+        display: none;
 
         .over{
             font-size: 30px;

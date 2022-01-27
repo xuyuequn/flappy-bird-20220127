@@ -13,6 +13,7 @@
   width: 30px;
   height: 30px;
   background: url(../images/birds.png);
+  transition: top 0.3s linear;
 }
 #game .start {
   position: absolute;
@@ -25,6 +26,7 @@
   text-align: center;
   font-weight: bolder;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 #game .start.start-white {
   color: #fff;
@@ -37,6 +39,7 @@
 #game .score {
   position: absolute;
   left: 50%;
+  top: 50px;
   transform: translateX(-50%);
   font-size: 20px;
   font-weight: bolder;
@@ -50,6 +53,7 @@
   right: 0;
   opacity: 0.7;
   background: #000;
+  display: none;
 }
 #game .end {
   position: absolute;
@@ -57,6 +61,7 @@
   top: 70px;
   transform: translateX(-50%);
   text-align: center;
+  display: none;
 }
 #game .end .over {
   font-size: 30px;
