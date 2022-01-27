@@ -1,0 +1,111 @@
+#game {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background: url(../images/sky.png);
+  background-position-x: 0px;
+}
+#game .bird {
+  position: absolute;
+  left: 50%;
+  top: 235px;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/birds.png);
+}
+#game .start {
+  position: absolute;
+  top: 295px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#game .start.start-white {
+  color: #fff;
+  font-size: 24px;
+}
+#game .start.start-blue {
+  color: #09f;
+  font-size: 36px;
+}
+#game .score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+}
+#game .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  background: #000;
+}
+#game .end {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#game .end .over {
+  font-size: 30px;
+  font-weight: bolder;
+  color: red;
+}
+#game .end .result,
+#game .end .final-score {
+  margin-top: 20px;
+  color: #ff0;
+  font-size: 20px;
+  font-weight: bold;
+}
+#game .rank-list {
+  color: #09f;
+  margin-top: 20px;
+}
+#game .rank-list .rank-item {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#game .rank-list .rank-item .rank-degree {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  background: #8eb9f5;
+  display: inline-block;
+  line-height: 14px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+#game .rank-list .rank-item .rank-degree.first {
+  background: #f54545;
+}
+#game .rank-list .rank-item .rank-degree.second {
+  background: #ff8547;
+}
+#game .rank-list .rank-item .rank-degree.third {
+  background: #ffac38;
+}
+#game .rank-list .rank-item .rank-score {
+  width: 30px;
+  display: inline-block;
+}
+#game .restart {
+  color: #09f;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+}
