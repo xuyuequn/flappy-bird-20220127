@@ -4,6 +4,8 @@
     width: 100%;
     background:url(../images/sky.png);
     background-position-x: 0px;
+    // 溢出隐藏
+    overflow: hidden;
 
     .bird{
         position: absolute;
@@ -50,6 +52,9 @@
         font-size:20px;
         font-weight: bolder;
         color:#fff;
+
+        // 隐藏
+        display: none;
     }
 
     .mask{
@@ -132,4 +137,21 @@
         font-weight: bolder;
         cursor: pointer;
     }
+
+    .pipe{
+        position: absolute;
+        width: 52px;
+
+        &.pipe-up{
+            top: 0;
+            background: url(../images/pipe2.png) center bottom;
+        }
+
+        &.pipe-down{
+            background: url(../images/pipe1.png) center top;
+            bottom: 0;
+        }
+    }
+
+    
 }
